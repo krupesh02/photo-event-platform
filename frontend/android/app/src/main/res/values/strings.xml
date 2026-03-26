@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Photo Event</string>
+    <string name="title_activity_main">Photo Event</string>
+    <string name="package_name">com.photoevent.app</string>
+    <string name="custom_url_scheme">com.photoevent.app</string>
+</resources>
