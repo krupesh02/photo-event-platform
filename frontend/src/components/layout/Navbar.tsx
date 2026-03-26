@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
 import { motion } from "framer-motion";
-import { Camera, Menu, X, LogOut, LayoutDashboard } from "lucide-react";
+import { Camera, Menu, X, LogOut, LayoutDashboard, Download } from "lucide-react";
 import { useState } from "react";
 
 export function Navbar() {
@@ -47,6 +47,14 @@ export function Navbar() {
                 >
                   Find Photos
                 </Link>
+                <a
+                  href="/app.apk"
+                  download
+                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-white gradient-bg transition-all hover:scale-105 shadow-md hover:shadow-lg"
+                >
+                  <Download className="w-4 h-4" />
+                  Get App
+                </a>
                 <div className="w-px h-6 mx-2" style={{ background: "hsl(var(--border))" }} />
                 <span className="text-sm" style={{ color: "hsl(var(--text-muted))" }}>
                   {user.name}
@@ -105,6 +113,15 @@ export function Navbar() {
                 <Link href="/search" className="px-4 py-2 rounded-xl text-sm font-medium" onClick={() => setOpen(false)}>
                   Find Photos
                 </Link>
+                <a
+                  href="/app.apk"
+                  download
+                  className="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold text-white gradient-bg mt-2 mb-2"
+                  onClick={() => setOpen(false)}
+                >
+                  <Download className="w-4 h-4" />
+                  Get App
+                </a>
                 <button
                   onClick={() => { logout(); setOpen(false); }}
                   className="px-4 py-2 rounded-xl text-sm font-medium text-left"

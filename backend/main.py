@@ -28,6 +28,7 @@ default_origins = [
     "http://127.0.0.1:3000",
     "capacitor://localhost",   # Capacitor iOS
     "http://localhost",        # Capacitor Android
+    "https://photo-event-platform.vercel.app" # Production Vercel
 ]
 
 app.add_middleware(
